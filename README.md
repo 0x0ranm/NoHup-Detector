@@ -1,5 +1,5 @@
 # Identify the use of the nohup command
-The project is designed to locate commands that run processes detached from session. </br>
+The project is designed to locate commands that executes processes detached from session. </br>
 Attacker can use commands like nohup, setsid to run malicious process detached from his session </br>
 At this moment the project is written only to detect the nohup command.
 
