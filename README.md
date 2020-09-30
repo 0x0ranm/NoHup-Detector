@@ -46,7 +46,7 @@ At this moment the project is written only to detect the nohup command.
   This file contains all information about each sighandles and which signals each handle should be used. </br>
   For example, the file contains the follow lines: </br>
   Each line contains 16bit bitmap, each bit represents another signal. </br>
-  In our case the rightmost set bit in SigIgn line represet SIGHUP signals. </br>
+  In our case the LSB in SigIgn line represents SIGHUP signals. </br>
  
 &nbsp;&nbsp;&nbsp;SigPnd: 0000000000000000 </br>
 &nbsp;&nbsp;&nbsp;ShdPnd: 0000000000000000 </br>
