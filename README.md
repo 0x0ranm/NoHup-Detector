@@ -68,6 +68,4 @@ Usage: python3 nohup_detector.py
 
 # TODO
 - [ ] Write volatility script to detect usage of nohup
-- [ ] Setsid support
-- [ ] Disown support
-- [ ] Screen support
+
