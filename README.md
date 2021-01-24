@@ -44,10 +44,11 @@ At this moment the project is written only to detect the nohup command.
   
   In case we want to check if a process set SIGHUP handle to SIGIGN we can check the file /proc/\<pid\>/status. </br>
   This file contains all information about each sighandles and which signals each handle should be used. </br>
-  For example, the file contains the follow lines: </br>
+  For example, the file follows this template: </br>
   Each line contains 16bit bitmap, each bit represents another signal. </br>
   In our case the LSB in SigIgn line represents SIGHUP signals. </br>
  
+For example:
 &nbsp;&nbsp;&nbsp;SigPnd: 0000000000000000 </br>
 &nbsp;&nbsp;&nbsp;ShdPnd: 0000000000000000 </br>
 &nbsp;&nbsp;&nbsp;SigBlk: 0000000000000000 </br>
@@ -62,7 +63,7 @@ At this moment the project is written only to detect the nohup command.
 
 # POC
 
-In case you run the script without root permissions you will not be able to run all over the processes </br>
+Run this script with root permissions in order to check all processes. </br>
 Usage: python3 nohup_detector.py 
 
 
