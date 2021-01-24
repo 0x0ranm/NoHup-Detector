@@ -48,7 +48,7 @@ At this moment the project is written only to detect the nohup command.
   Each line contains 16bit bitmap, each bit represents another signal. </br>
   In our case the LSB in SigIgn line represents SIGHUP signals. </br>
  
-For example:
+For example: </br>
 &nbsp;&nbsp;&nbsp;SigPnd: 0000000000000000 </br>
 &nbsp;&nbsp;&nbsp;ShdPnd: 0000000000000000 </br>
 &nbsp;&nbsp;&nbsp;SigBlk: 0000000000000000 </br>
