@@ -20,7 +20,7 @@ def check_fd(file_descriptors):
 def check_hanghandle(pid):
 	'''
 	check_hanghandle(pid) --> Boolean
-	The function checks if the SIGHUG flag is turn on on the SIGIGN line in status file under /proc.
+	The function checks if the SIGHUG flag is turn on the SIGIGN line in the status file under /proc.
 	'''
 
 	file_path = "/proc/{}/status".format(pid)
