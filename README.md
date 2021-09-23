@@ -1,5 +1,5 @@
 # Identify the use of the nohup command
-The project is designed to locate commands that executes processes detached from session. </br>
+The project is designed to detect commands that executes processes detached from session. </br>
 Attacker can use commands like nohup, setsid to run malicious process detached from his session </br>
 At this moment the project is written only to detect the nohup command.
 
@@ -18,7 +18,7 @@ At this moment the project is written only to detect the nohup command.
   
   There are some special environment variables in linux.
   One special environment variable is the variable $_. </br>
-  This variable holds the last parameter of the last command.</br>
+  This variable holds the parameter of the our last command.</br>
   For example: </br>
   &nbsp;&nbsp;&nbsp;if we run ps aux, the variable will get the value aux. </br>
   &nbsp;&nbsp;&nbsp;but if we run the command ps without parameters, the variable will get the value ps. </br>
